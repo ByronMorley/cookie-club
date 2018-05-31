@@ -6,20 +6,16 @@
   "keywords": ["silverstripe", "content", "building"],
   "license": "BSD-3-Clause",
   "authors": [
-    {"name": "Byron Morley","email": "byron@regbsoftware.co.uk"}
+    {"name": "Byron Morley","email": "byron@rgbsoftware.co.uk"}
   ],
   "support": {
     "issues": "http://github.com/your-vendor-name/module-name/issues"
   },
-  "require": {
-    "silverstripe/cms": "~3.1",
-    "silverstripe/framework": "~3.1"
+  "config": {
+    "vendor-dir": "../"
   },
-  "extra": {
-    "installer-name": "salad-slider",
-    "screenshots": [
-      "relative/path/screenshot1.png",
-      "http://myhost.com/screenshot2.png"
-    ]
+  "require": {
+    "twitter/bootstrap":"~4.1",
+    "components/jquery":"~3.3.1"
   }
 }
