@@ -17,5 +17,12 @@
   "require": {
     "twitter/bootstrap":"~4.1",
     "components/jquery":"~3.3.1"
+  },
+  "extra": {
+    "installer-name": "cookie-club",
+    "screenshots": [
+      "relative/path/screenshot1.png",
+      "http://myhost.com/screenshot2.png"
+    ]
   }
 }
