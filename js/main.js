@@ -1,5 +1,8 @@
 $(document).ready(function(){
+    cookieCheck();
+});
 
+function cookieCheck() {
     var cookieMessage = document.getElementById('cookie-message');
     if (cookieMessage == null) {
         return;
@@ -7,14 +10,13 @@ $(document).ready(function(){
     var cookie = readCookie('seen-cookie-message');
 
     if (cookie != null && cookie == 'yes') {
-        cookieMessage.style.display = 'none';
+        //cookieMessage.style.display = 'none';
         $('#cookie-message').modal('hide');
-
     } else {
-        cookieMessage.style.display = 'block';
+        //cookieMessage.style.display = 'block';
         $('#cookie-message').modal('show');
     }
-    
+
     // Set/update cookie
     var cookieExpiry = cookieMessage.getAttribute('data-cookie-expiry');
     if (cookieExpiry == null) {
@@ -24,9 +26,8 @@ $(document).ready(function(){
     if (cookiePath == null) {
         cookiePath = "/";
     }
-    createCookie('seen-cookie-message','yes',cookieExpiry,cookiePath);
-
-});
+    createCookie('seen-cookie-message', 'yes', cookieExpiry, cookiePath);
+}
 
 function createCookie(name,value,days,path) {
     if (days) {

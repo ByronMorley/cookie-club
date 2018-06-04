@@ -1,7 +1,3 @@
-<body>
-<script>
-	document.body.className = document.body.className + " js_enabled";
-</script>
 
 <!-- The Modal -->
 <div id="cookie-message" data-cookie-expiry="60" class="modal fade" role="dialog">
